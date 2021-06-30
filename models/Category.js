@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection.js');
+const sequelize = require('../config/connection');
 
 class Category extends Model {}
 
@@ -12,7 +12,7 @@ Category.init(
       autoIncrement: true,
     },
     category_name: {
-      trype: DataTypes.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
   },
